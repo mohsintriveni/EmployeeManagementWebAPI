@@ -4635,11 +4635,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TGCUser105\\Desktop\\DemoAPI-development - Copy\\WebApplication2\\EmployeeManagement.csproj",
+      "projectUniqueName": "C:\\Users\\TGCUser105\\Desktop\\EmployeeManagementWebAPI\\WebApplication2\\EmployeeManagement.csproj",
       "projectName": "EmployeeManagement",
-      "projectPath": "C:\\Users\\TGCUser105\\Desktop\\DemoAPI-development - Copy\\WebApplication2\\EmployeeManagement.csproj",
+      "projectPath": "C:\\Users\\TGCUser105\\Desktop\\EmployeeManagementWebAPI\\WebApplication2\\EmployeeManagement.csproj",
       "packagesPath": "C:\\Users\\TGCUser105\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TGCUser105\\Desktop\\DemoAPI-development - Copy\\WebApplication2\\obj\\",
+      "outputPath": "C:\\Users\\TGCUser105\\Desktop\\EmployeeManagementWebAPI\\WebApplication2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
