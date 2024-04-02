@@ -19,5 +19,13 @@ namespace EmployeeManagement.Repository
            .ToListAsync();
             return countries;
         }
+
+        public async Task<State> GetStateById(int Id)
+        {
+            var state = await _context.States
+           .Where(s => s.Id == Id)
+           .FirstOrDefaultAsync();
+            return state;
+        }
     }
 }

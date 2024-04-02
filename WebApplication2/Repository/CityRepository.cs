@@ -1,5 +1,6 @@
 ﻿using EmployeeManagement.Data;
 using EmployeeManagement.Entities;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -18,6 +19,13 @@ namespace EmployeeManagement.Repository
            .Where(s => s.StateId == Id)
            .ToListAsync();
             return state;
+        }
+
+        public async Task<City> GetCityById(int Id)
+        {
+            var city = await _context.Cities
+           .Where(c => c.Id == Id).FirstOrDefaultAsync();
+            return city;
         }
     }
 }

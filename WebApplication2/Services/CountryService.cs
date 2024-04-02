@@ -15,5 +15,10 @@ namespace EmployeeManagement.Services
         {
             return await _countryRepository.GetCountries();
         }
+        public async Task<Country> GetCountryById(int Id)
+        {
+            return await _countryRepository.GetCountryById(Id);
+        }
+        
     }
 }

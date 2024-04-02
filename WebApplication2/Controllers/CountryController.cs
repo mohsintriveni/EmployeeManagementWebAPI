@@ -28,5 +28,19 @@ namespace EmployeeManagement.Controllers
                 return StatusCode(500, $"An error occurred: {ex.Message}");
             }
         }
+
+        [HttpGet("get-country-by-id/{Id}")]
+        public async Task<ActionResult<IEnumerable<Country>>> GetCountryById(int Id)
+        {
+            try
+            {
+                var country = await _countryService.GetCountryById(Id);
+                return Ok(country);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
     }
 }

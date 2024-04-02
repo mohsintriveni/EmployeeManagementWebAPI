@@ -15,5 +15,10 @@ namespace EmployeeManagement.Services
         {
             return await _cityRepository.GetCity(Id);
         }
+
+        public async Task<City> GetCityById(int Id)
+        {
+            return await _cityRepository.GetCityById(Id);
+        }
     }
 }

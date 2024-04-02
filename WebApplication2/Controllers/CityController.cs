@@ -30,5 +30,19 @@ namespace EmployeeManagement.Controllers
             }
         }
 
+        [HttpGet("get-city-by-id/{Id}")]
+        public async Task<ActionResult<IEnumerable<City>>> GetCityById(int Id)
+        {
+            try
+            {
+                var city= await _cityService.GetCityById(Id);
+                return Ok(city);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
     }
 }

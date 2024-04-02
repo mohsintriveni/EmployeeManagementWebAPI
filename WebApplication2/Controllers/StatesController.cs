@@ -29,5 +29,19 @@ namespace EmployeeManagement.Controllers
             }
         }
 
+        [HttpGet("get-state-by-id/{Id}")]
+        public async Task<ActionResult<IEnumerable<State>>> GetStateById(int Id)
+        {
+            try
+            {
+                var state = await _stateService.GetStateById(Id);
+                return Ok(state);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
     }
 }

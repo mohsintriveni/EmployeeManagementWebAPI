@@ -15,5 +15,12 @@ namespace EmployeeManagement.Services
         {
             return await _stateRepository.GetState(Id);
         }
+
+        public async Task<State> GetStateById(int Id)
+        {
+            return await _stateRepository.GetStateById(Id);
+        }
+
+
     }
 }

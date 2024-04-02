@@ -61,7 +61,7 @@ namespace EmployeeManagement.Repository
                 Hobbies = employee.Hobbies,
                 Password = employee.Password,
                 ZipCode = employee.ZipCode,
-                Photo = uniqueFileName,
+                Photo = filePath
             };
             _context.Employees.Add(newEmployee);
             await _context.SaveChangesAsync();
