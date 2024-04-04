@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using EmployeeManagement.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace EmployeeManagement.Data
 {
-    public class DataContext:DbContext
+    public class DataContext:IdentityDbContext
     {
         public DataContext(DbContextOptions options):base(options)
         {

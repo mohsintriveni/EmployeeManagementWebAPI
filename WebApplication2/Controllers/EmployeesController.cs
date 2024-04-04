@@ -5,18 +5,24 @@ using EmployeeManagement.Entities;
 using EmployeeManagement.Services;
 using static EmployeeManagement.Repository.EmployeeRepository;
 using EmployeeManagement.ViewModels;
+using EmployeeManagement.Hubs;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EmployeeManagement.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class EmployeesController : ControllerBase
     {
         private readonly IEmployeeService _employeeService;
+        private readonly IHubContext<NotificationHub> _hubContext;
 
-        public EmployeesController(IEmployeeService employeeService)
+        public EmployeesController(IEmployeeService employeeService, IHubContext<NotificationHub> hubContext)
         {
             _employeeService = employeeService;
+            _hubContext = hubContext;
         }
 
         [HttpGet("get-all-employees")]
@@ -57,6 +63,7 @@ namespace EmployeeManagement.Controllers
             try
             {
                 await _employeeService.AddEmployeeAsync(employee);
+                await _hubContext.Clients.All.SendAsync("New employee added: " + employee.FirstName);
                 return CreatedAtAction(nameof(GetEmployee), new { id = employee.Id }, employee);
             }
             catch (Exception ex)

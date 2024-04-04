@@ -6575,3 +6575,401 @@ WHERE [s].[Id] = @__Id_0
 2024-04-02 14:30:37.085 +05:30  INF  Executed action EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement) in 8.913ms
 2024-04-02 14:30:37.085 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement)'
 2024-04-02 14:30:37.085 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/States/get-state-by-id/19 - - - 200 - application/json;+charset=utf-8 9.1526ms
+2024-04-02 14:32:49.407 +05:30  INF  Now listening on: http://localhost:5055
+2024-04-02 14:32:49.426 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-04-02 14:32:49.426 +05:30  INF  Hosting environment: Development
+2024-04-02 14:32:49.426 +05:30  INF  Content root path: C:\Users\TGCUser105\Desktop\EmployeeManagementWebAPI\WebApplication2
+2024-04-02 14:32:49.785 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/swagger/index.html - -
+2024-04-02 14:32:49.923 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/_framework/aspnetcore-browser-refresh.js - -
+2024-04-02 14:32:49.923 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/_vs/browserLink - -
+2024-04-02 14:32:49.935 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 5.5798ms
+2024-04-02 14:32:49.935 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/swagger/index.html - - - 200 - text/html;charset=utf-8 152.0835ms
+2024-04-02 14:32:49.938 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.3070ms
+2024-04-02 14:32:49.984 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/swagger/v1/swagger.json - -
+2024-04-02 14:32:50.063 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.2934ms
+2024-04-02 14:32:54.250 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - -
+2024-04-02 14:32:54.256 +05:30  WRN  Failed to determine the https port for redirect.
+2024-04-02 14:32:54.258 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:32:54.270 +05:30  INF  Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Employee]]] GetEmployees() on controller EmployeeManagement.Controllers.EmployeesController (EmployeeManagement).
+2024-04-02 14:32:54.396 +05:30  INF  Executing action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:32:54.688 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-02 14:32:55.141 +05:30  INF  Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[BirthDate], [e].[City], [e].[Country], [e].[Created], [e].[Email], [e].[FirstName], [e].[Gender], [e].[Hobbies], [e].[LastName], [e].[MaritalStatus], [e].[Password], [e].[Photo], [e].[Salary], [e].[State], [e].[ZipCode]
+FROM [Employees] AS [e]
+2024-04-02 14:32:55.203 +05:30  INF  Executed action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 803.965ms.
+2024-04-02 14:32:55.206 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Employee, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 14:32:55.221 +05:30  INF  Executed action EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) in 949.0224ms
+2024-04-02 14:32:55.221 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:32:55.226 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - - - 200 - application/json;+charset=utf-8 975.7146ms
+2024-04-02 14:32:55.428 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - -
+2024-04-02 14:32:55.429 +05:30  INF  CORS policy execution successful.
+2024-04-02 14:32:55.430 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 14:32:55.432 +05:30  INF  Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Country]]] GetCountries() on controller EmployeeManagement.Controllers.CountryController (EmployeeManagement).
+2024-04-02 14:32:55.447 +05:30  INF  Executing action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:32:55.463 +05:30  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-02 14:32:55.470 +05:30  INF  Executed action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.2898ms.
+2024-04-02 14:32:55.471 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Country, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 14:32:55.472 +05:30  INF  Executed action EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) in 40.2695ms
+2024-04-02 14:32:55.472 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 14:32:55.472 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - - - 200 - application/json;+charset=utf-8 44.8252ms
+2024-04-02 14:32:59.829 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Employees/get-employee-by-id/40 - -
+2024-04-02 14:32:59.830 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployee (EmployeeManagement)'
+2024-04-02 14:32:59.836 +05:30  INF  Route matched with {action = "GetEmployee", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EmployeeManagement.Entities.Employee]] GetEmployee(Int32) on controller EmployeeManagement.Controllers.EmployeesController (EmployeeManagement).
+2024-04-02 14:32:59.851 +05:30  INF  Executing action method EmployeeManagement.Controllers.EmployeesController.GetEmployee (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:32:59.951 +05:30  INF  Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[BirthDate], [e].[City], [e].[Country], [e].[Created], [e].[Email], [e].[FirstName], [e].[Gender], [e].[Hobbies], [e].[LastName], [e].[MaritalStatus], [e].[Password], [e].[Photo], [e].[Salary], [e].[State], [e].[ZipCode]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__p_0
+2024-04-02 14:32:59.952 +05:30  INF  Executed action method EmployeeManagement.Controllers.EmployeesController.GetEmployee (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 101.7279ms.
+2024-04-02 14:32:59.952 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.Employee'.
+2024-04-02 14:32:59.953 +05:30  INF  Executed action EmployeeManagement.Controllers.EmployeesController.GetEmployee (EmployeeManagement) in 116.8472ms
+2024-04-02 14:32:59.953 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployee (EmployeeManagement)'
+2024-04-02 14:32:59.953 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Employees/get-employee-by-id/40 - - - 200 - application/json;+charset=utf-8 124.1904ms
+2024-04-02 14:32:59.981 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/City/get-city-by-id/8 - -
+2024-04-02 14:32:59.982 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement)'
+2024-04-02 14:32:59.984 +05:30  INF  Route matched with {action = "GetCityById", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.City]]] GetCityById(Int32) on controller EmployeeManagement.Controllers.CityController (EmployeeManagement).
+2024-04-02 14:32:59.992 +05:30  INF  Executing action method EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:33:00.002 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CityName], [c].[StateId]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-04-02 14:33:00.007 +05:30  INF  Executed action method EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.5131ms.
+2024-04-02 14:33:00.007 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.City'.
+2024-04-02 14:33:00.008 +05:30  INF  Executed action EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement) in 24.6403ms
+2024-04-02 14:33:00.008 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement)'
+2024-04-02 14:33:00.008 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/City/get-city-by-id/8 - - - 200 - application/json;+charset=utf-8 27.1719ms
+2024-04-02 14:33:00.128 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Country/get-country-by-id/7 - -
+2024-04-02 14:33:00.129 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement)'
+2024-04-02 14:33:00.131 +05:30  INF  Route matched with {action = "GetCountryById", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Country]]] GetCountryById(Int32) on controller EmployeeManagement.Controllers.CountryController (EmployeeManagement).
+2024-04-02 14:33:00.139 +05:30  INF  Executing action method EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:33:00.145 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CountryName]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-04-02 14:33:00.146 +05:30  INF  Executed action method EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.8842ms.
+2024-04-02 14:33:00.146 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.Country'.
+2024-04-02 14:33:00.146 +05:30  INF  Executed action EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement) in 15.3321ms
+2024-04-02 14:33:00.146 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement)'
+2024-04-02 14:33:00.146 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Country/get-country-by-id/7 - - - 200 - application/json;+charset=utf-8 18.1193ms
+2024-04-02 14:33:00.170 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/States/get-state-by-id/19 - -
+2024-04-02 14:33:00.170 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement)'
+2024-04-02 14:33:00.172 +05:30  INF  Route matched with {action = "GetStateById", controller = "States"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.State]]] GetStateById(Int32) on controller EmployeeManagement.Controllers.StatesController (EmployeeManagement).
+2024-04-02 14:33:00.180 +05:30  INF  Executing action method EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:33:00.187 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[CountryId], [s].[StateName]
+FROM [States] AS [s]
+WHERE [s].[Id] = @__Id_0
+2024-04-02 14:33:00.190 +05:30  INF  Executed action method EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.5235ms.
+2024-04-02 14:33:00.191 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.State'.
+2024-04-02 14:33:00.191 +05:30  INF  Executed action EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement) in 19.0719ms
+2024-04-02 14:33:00.191 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement)'
+2024-04-02 14:33:00.192 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/States/get-state-by-id/19 - - - 200 - application/json;+charset=utf-8 21.3214ms
+2024-04-02 14:34:29.869 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - -
+2024-04-02 14:34:29.901 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:34:29.902 +05:30  INF  Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Employee]]] GetEmployees() on controller EmployeeManagement.Controllers.EmployeesController (EmployeeManagement).
+2024-04-02 14:34:29.912 +05:30  INF  Executing action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:34:29.915 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[BirthDate], [e].[City], [e].[Country], [e].[Created], [e].[Email], [e].[FirstName], [e].[Gender], [e].[Hobbies], [e].[LastName], [e].[MaritalStatus], [e].[Password], [e].[Photo], [e].[Salary], [e].[State], [e].[ZipCode]
+FROM [Employees] AS [e]
+2024-04-02 14:34:29.920 +05:30  INF  Executed action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.8448ms.
+2024-04-02 14:34:29.920 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Employee, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 14:34:29.920 +05:30  INF  Executed action EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) in 18.7206ms
+2024-04-02 14:34:29.920 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:34:29.921 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - - - 200 - application/json;+charset=utf-8 52.3546ms
+2024-04-02 14:34:29.965 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - -
+2024-04-02 14:34:29.965 +05:30  INF  CORS policy execution successful.
+2024-04-02 14:34:29.965 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 14:34:29.966 +05:30  INF  Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Country]]] GetCountries() on controller EmployeeManagement.Controllers.CountryController (EmployeeManagement).
+2024-04-02 14:34:29.975 +05:30  INF  Executing action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:34:29.976 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-02 14:34:29.976 +05:30  INF  Executed action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.6814ms.
+2024-04-02 14:34:29.977 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Country, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 14:34:29.977 +05:30  INF  Executed action EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) in 11.2296ms
+2024-04-02 14:34:29.977 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 14:34:29.977 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - - - 200 - application/json;+charset=utf-8 11.9532ms
+2024-04-02 14:46:51.574 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - -
+2024-04-02 14:46:51.578 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:46:51.578 +05:30  INF  Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Employee]]] GetEmployees() on controller EmployeeManagement.Controllers.EmployeesController (EmployeeManagement).
+2024-04-02 14:46:51.587 +05:30  INF  Executing action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:46:51.632 +05:30  INF  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[BirthDate], [e].[City], [e].[Country], [e].[Created], [e].[Email], [e].[FirstName], [e].[Gender], [e].[Hobbies], [e].[LastName], [e].[MaritalStatus], [e].[Password], [e].[Photo], [e].[Salary], [e].[State], [e].[ZipCode]
+FROM [Employees] AS [e]
+2024-04-02 14:46:51.632 +05:30  INF  Executed action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 45.0357ms.
+2024-04-02 14:46:51.633 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Employee, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 14:46:51.633 +05:30  INF  Executed action EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) in 54.8959ms
+2024-04-02 14:46:51.633 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:46:51.633 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - - - 200 - application/json;+charset=utf-8 59.1245ms
+2024-04-02 14:48:50.951 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - -
+2024-04-02 14:48:50.951 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:48:50.954 +05:30  INF  Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Employee]]] GetEmployees() on controller EmployeeManagement.Controllers.EmployeesController (EmployeeManagement).
+2024-04-02 14:48:50.964 +05:30  INF  Executing action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:48:50.966 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[BirthDate], [e].[City], [e].[Country], [e].[Created], [e].[Email], [e].[FirstName], [e].[Gender], [e].[Hobbies], [e].[LastName], [e].[MaritalStatus], [e].[Password], [e].[Photo], [e].[Salary], [e].[State], [e].[ZipCode]
+FROM [Employees] AS [e]
+2024-04-02 14:48:50.969 +05:30  INF  Executed action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.361ms.
+2024-04-02 14:48:50.970 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Employee, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 14:48:50.971 +05:30  INF  Executed action EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) in 16.6157ms
+2024-04-02 14:48:50.971 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:48:50.971 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - - - 200 - application/json;+charset=utf-8 20.1370ms
+2024-04-02 14:48:51.189 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - -
+2024-04-02 14:48:51.189 +05:30  INF  CORS policy execution successful.
+2024-04-02 14:48:51.190 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 14:48:51.190 +05:30  INF  Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Country]]] GetCountries() on controller EmployeeManagement.Controllers.CountryController (EmployeeManagement).
+2024-04-02 14:48:51.200 +05:30  INF  Executing action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:48:51.202 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-02 14:48:51.203 +05:30  INF  Executed action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.5108ms.
+2024-04-02 14:48:51.203 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Country, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 14:48:51.203 +05:30  INF  Executed action EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) in 13.7776ms
+2024-04-02 14:48:51.203 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 14:48:51.203 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - - - 200 - application/json;+charset=utf-8 14.1884ms
+2024-04-02 14:49:31.168 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - -
+2024-04-02 14:49:31.171 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:49:31.172 +05:30  INF  Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Employee]]] GetEmployees() on controller EmployeeManagement.Controllers.EmployeesController (EmployeeManagement).
+2024-04-02 14:49:31.179 +05:30  INF  Executing action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:49:31.181 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[BirthDate], [e].[City], [e].[Country], [e].[Created], [e].[Email], [e].[FirstName], [e].[Gender], [e].[Hobbies], [e].[LastName], [e].[MaritalStatus], [e].[Password], [e].[Photo], [e].[Salary], [e].[State], [e].[ZipCode]
+FROM [Employees] AS [e]
+2024-04-02 14:49:31.185 +05:30  INF  Executed action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.5488ms.
+2024-04-02 14:49:31.186 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Employee, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 14:49:31.186 +05:30  INF  Executed action EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) in 13.9599ms
+2024-04-02 14:49:31.186 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:49:31.186 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - - - 200 - application/json;+charset=utf-8 18.3986ms
+2024-04-02 14:49:31.241 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - -
+2024-04-02 14:49:31.241 +05:30  INF  CORS policy execution successful.
+2024-04-02 14:49:31.242 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 14:49:31.242 +05:30  INF  Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Country]]] GetCountries() on controller EmployeeManagement.Controllers.CountryController (EmployeeManagement).
+2024-04-02 14:49:31.251 +05:30  INF  Executing action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:49:31.252 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-02 14:49:31.252 +05:30  INF  Executed action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.4165ms.
+2024-04-02 14:49:31.253 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Country, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 14:49:31.253 +05:30  INF  Executed action EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) in 11.0451ms
+2024-04-02 14:49:31.253 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 14:49:31.253 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - - - 200 - application/json;+charset=utf-8 11.4239ms
+2024-04-02 14:59:12.156 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - -
+2024-04-02 14:59:12.156 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:59:12.156 +05:30  INF  Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Employee]]] GetEmployees() on controller EmployeeManagement.Controllers.EmployeesController (EmployeeManagement).
+2024-04-02 14:59:12.166 +05:30  INF  Executing action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:59:12.210 +05:30  INF  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[BirthDate], [e].[City], [e].[Country], [e].[Created], [e].[Email], [e].[FirstName], [e].[Gender], [e].[Hobbies], [e].[LastName], [e].[MaritalStatus], [e].[Password], [e].[Photo], [e].[Salary], [e].[State], [e].[ZipCode]
+FROM [Employees] AS [e]
+2024-04-02 14:59:12.210 +05:30  INF  Executed action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 44.5051ms.
+2024-04-02 14:59:12.210 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Employee, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 14:59:12.211 +05:30  INF  Executed action EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) in 54.5622ms
+2024-04-02 14:59:12.211 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 14:59:12.211 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - - - 200 - application/json;+charset=utf-8 55.0558ms
+2024-04-02 14:59:12.338 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/City/get-city-by-id/8 - -
+2024-04-02 14:59:12.339 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement)'
+2024-04-02 14:59:12.339 +05:30  INF  Route matched with {action = "GetCityById", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.City]]] GetCityById(Int32) on controller EmployeeManagement.Controllers.CityController (EmployeeManagement).
+2024-04-02 14:59:12.349 +05:30  INF  Executing action method EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:59:12.353 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CityName], [c].[StateId]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-04-02 14:59:12.353 +05:30  INF  Executed action method EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.2616ms.
+2024-04-02 14:59:12.353 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.City'.
+2024-04-02 14:59:12.354 +05:30  INF  Executed action EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement) in 14.3156ms
+2024-04-02 14:59:12.354 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement)'
+2024-04-02 14:59:12.354 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/City/get-city-by-id/8 - - - 200 - application/json;+charset=utf-8 15.4037ms
+2024-04-02 14:59:12.445 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/States/get-state-by-id/19 - -
+2024-04-02 14:59:12.446 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement)'
+2024-04-02 14:59:12.446 +05:30  INF  Route matched with {action = "GetStateById", controller = "States"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.State]]] GetStateById(Int32) on controller EmployeeManagement.Controllers.StatesController (EmployeeManagement).
+2024-04-02 14:59:12.454 +05:30  INF  Executing action method EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:59:12.457 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[CountryId], [s].[StateName]
+FROM [States] AS [s]
+WHERE [s].[Id] = @__Id_0
+2024-04-02 14:59:12.457 +05:30  INF  Executed action method EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.0213ms.
+2024-04-02 14:59:12.457 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.State'.
+2024-04-02 14:59:12.457 +05:30  INF  Executed action EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement) in 11.2936ms
+2024-04-02 14:59:12.457 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement)'
+2024-04-02 14:59:12.457 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/States/get-state-by-id/19 - - - 200 - application/json;+charset=utf-8 12.3324ms
+2024-04-02 14:59:12.480 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Country/get-country-by-id/7 - -
+2024-04-02 14:59:12.480 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement)'
+2024-04-02 14:59:12.480 +05:30  INF  Route matched with {action = "GetCountryById", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Country]]] GetCountryById(Int32) on controller EmployeeManagement.Controllers.CountryController (EmployeeManagement).
+2024-04-02 14:59:12.488 +05:30  INF  Executing action method EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:59:12.490 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CountryName]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-04-02 14:59:12.490 +05:30  INF  Executed action method EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.0726ms.
+2024-04-02 14:59:12.490 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.Country'.
+2024-04-02 14:59:12.490 +05:30  INF  Executed action EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement) in 10.4189ms
+2024-04-02 14:59:12.490 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement)'
+2024-04-02 14:59:12.490 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Country/get-country-by-id/7 - - - 200 - application/json;+charset=utf-8 10.7568ms
+2024-04-02 14:59:12.512 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/City/get-city-by-id/1 - -
+2024-04-02 14:59:12.512 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement)'
+2024-04-02 14:59:12.512 +05:30  INF  Route matched with {action = "GetCityById", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.City]]] GetCityById(Int32) on controller EmployeeManagement.Controllers.CityController (EmployeeManagement).
+2024-04-02 14:59:12.521 +05:30  INF  Executing action method EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:59:12.522 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CityName], [c].[StateId]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-04-02 14:59:12.525 +05:30  INF  Executed action method EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.3416ms.
+2024-04-02 14:59:12.525 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.City'.
+2024-04-02 14:59:12.527 +05:30  INF  Executed action EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement) in 14.5779ms
+2024-04-02 14:59:12.527 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement)'
+2024-04-02 14:59:12.527 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/City/get-city-by-id/1 - - - 200 - application/json;+charset=utf-8 14.9200ms
+2024-04-02 14:59:12.546 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/States/get-state-by-id/17 - -
+2024-04-02 14:59:12.546 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement)'
+2024-04-02 14:59:12.546 +05:30  INF  Route matched with {action = "GetStateById", controller = "States"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.State]]] GetStateById(Int32) on controller EmployeeManagement.Controllers.StatesController (EmployeeManagement).
+2024-04-02 14:59:12.555 +05:30  INF  Executing action method EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:59:12.557 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[CountryId], [s].[StateName]
+FROM [States] AS [s]
+WHERE [s].[Id] = @__Id_0
+2024-04-02 14:59:12.557 +05:30  INF  Executed action method EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.3943ms.
+2024-04-02 14:59:12.557 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.State'.
+2024-04-02 14:59:12.557 +05:30  INF  Executed action EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement) in 10.6056ms
+2024-04-02 14:59:12.557 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement)'
+2024-04-02 14:59:12.557 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/States/get-state-by-id/17 - - - 200 - application/json;+charset=utf-8 10.9815ms
+2024-04-02 14:59:12.578 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Country/get-country-by-id/7 - -
+2024-04-02 14:59:12.578 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement)'
+2024-04-02 14:59:12.578 +05:30  INF  Route matched with {action = "GetCountryById", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Country]]] GetCountryById(Int32) on controller EmployeeManagement.Controllers.CountryController (EmployeeManagement).
+2024-04-02 14:59:12.586 +05:30  INF  Executing action method EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:59:12.587 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CountryName]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-04-02 14:59:12.587 +05:30  INF  Executed action method EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.351ms.
+2024-04-02 14:59:12.587 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.Country'.
+2024-04-02 14:59:12.587 +05:30  INF  Executed action EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement) in 9.1905ms
+2024-04-02 14:59:12.587 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement)'
+2024-04-02 14:59:12.587 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Country/get-country-by-id/7 - - - 200 - application/json;+charset=utf-8 9.5651ms
+2024-04-02 14:59:12.735 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - -
+2024-04-02 14:59:12.735 +05:30  INF  CORS policy execution successful.
+2024-04-02 14:59:12.735 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 14:59:12.735 +05:30  INF  Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Country]]] GetCountries() on controller EmployeeManagement.Controllers.CountryController (EmployeeManagement).
+2024-04-02 14:59:12.745 +05:30  INF  Executing action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 14:59:12.746 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-02 14:59:12.747 +05:30  INF  Executed action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.2772ms.
+2024-04-02 14:59:12.747 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Country, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 14:59:12.748 +05:30  INF  Executed action EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) in 12.3348ms
+2024-04-02 14:59:12.748 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 14:59:12.748 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - - - 200 - application/json;+charset=utf-8 12.7777ms
+2024-04-02 15:00:37.932 +05:30  INF  Now listening on: http://localhost:5055
+2024-04-02 15:00:37.951 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-04-02 15:00:37.952 +05:30  INF  Hosting environment: Development
+2024-04-02 15:00:37.952 +05:30  INF  Content root path: C:\Users\TGCUser105\Desktop\EmployeeManagementWebAPI\WebApplication2
+2024-04-02 15:00:38.150 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/swagger/index.html - -
+2024-04-02 15:00:38.325 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/_vs/browserLink - -
+2024-04-02 15:00:38.325 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/_framework/aspnetcore-browser-refresh.js - -
+2024-04-02 15:00:38.338 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 6.1473ms
+2024-04-02 15:00:38.338 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/swagger/index.html - - - 200 - text/html;charset=utf-8 191.4753ms
+2024-04-02 15:00:38.345 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.5242ms
+2024-04-02 15:00:38.391 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/swagger/v1/swagger.json - -
+2024-04-02 15:00:38.475 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 83.9232ms
+2024-04-02 15:00:41.360 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - -
+2024-04-02 15:00:41.365 +05:30  WRN  Failed to determine the https port for redirect.
+2024-04-02 15:00:41.367 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 15:00:41.377 +05:30  INF  Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Employee]]] GetEmployees() on controller EmployeeManagement.Controllers.EmployeesController (EmployeeManagement).
+2024-04-02 15:00:41.496 +05:30  INF  Executing action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 15:00:41.793 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-02 15:00:42.255 +05:30  INF  Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[BirthDate], [e].[City], [e].[Country], [e].[Created], [e].[Email], [e].[FirstName], [e].[Gender], [e].[Hobbies], [e].[LastName], [e].[MaritalStatus], [e].[Password], [e].[Photo], [e].[Salary], [e].[State], [e].[ZipCode]
+FROM [Employees] AS [e]
+2024-04-02 15:00:42.318 +05:30  INF  Executed action method EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 818.6688ms.
+2024-04-02 15:00:42.323 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Employee, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 15:00:42.339 +05:30  INF  Executed action EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement) in 959.8156ms
+2024-04-02 15:00:42.340 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.EmployeesController.GetEmployees (EmployeeManagement)'
+2024-04-02 15:00:42.344 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Employees/get-all-employees - - - 200 - application/json;+charset=utf-8 984.2168ms
+2024-04-02 15:00:42.445 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/City/get-city-by-id/8 - -
+2024-04-02 15:00:42.446 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement)'
+2024-04-02 15:00:42.453 +05:30  INF  Route matched with {action = "GetCityById", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.City]]] GetCityById(Int32) on controller EmployeeManagement.Controllers.CityController (EmployeeManagement).
+2024-04-02 15:00:42.469 +05:30  INF  Executing action method EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 15:00:42.543 +05:30  INF  Executed DbCommand (14ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CityName], [c].[StateId]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-04-02 15:00:42.550 +05:30  INF  Executed action method EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 80.413ms.
+2024-04-02 15:00:42.550 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.City'.
+2024-04-02 15:00:42.552 +05:30  INF  Executed action EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement) in 98.3521ms
+2024-04-02 15:00:42.552 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement)'
+2024-04-02 15:00:42.552 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/City/get-city-by-id/8 - - - 200 - application/json;+charset=utf-8 106.9043ms
+2024-04-02 15:00:42.636 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/States/get-state-by-id/19 - -
+2024-04-02 15:00:42.636 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement)'
+2024-04-02 15:00:42.639 +05:30  INF  Route matched with {action = "GetStateById", controller = "States"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.State]]] GetStateById(Int32) on controller EmployeeManagement.Controllers.StatesController (EmployeeManagement).
+2024-04-02 15:00:42.648 +05:30  INF  Executing action method EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 15:00:42.689 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[CountryId], [s].[StateName]
+FROM [States] AS [s]
+WHERE [s].[Id] = @__Id_0
+2024-04-02 15:00:42.695 +05:30  INF  Executed action method EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 46.9907ms.
+2024-04-02 15:00:42.695 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.State'.
+2024-04-02 15:00:42.696 +05:30  INF  Executed action EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement) in 57.8833ms
+2024-04-02 15:00:42.697 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement)'
+2024-04-02 15:00:42.697 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/States/get-state-by-id/19 - - - 200 - application/json;+charset=utf-8 60.9345ms
+2024-04-02 15:00:42.722 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Country/get-country-by-id/7 - -
+2024-04-02 15:00:42.722 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement)'
+2024-04-02 15:00:42.724 +05:30  INF  Route matched with {action = "GetCountryById", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Country]]] GetCountryById(Int32) on controller EmployeeManagement.Controllers.CountryController (EmployeeManagement).
+2024-04-02 15:00:42.732 +05:30  INF  Executing action method EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 15:00:42.739 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CountryName]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-04-02 15:00:42.742 +05:30  INF  Executed action method EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.9302ms.
+2024-04-02 15:00:42.742 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.Country'.
+2024-04-02 15:00:42.743 +05:30  INF  Executed action EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement) in 18.5222ms
+2024-04-02 15:00:42.743 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement)'
+2024-04-02 15:00:42.743 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Country/get-country-by-id/7 - - - 200 - application/json;+charset=utf-8 21.4880ms
+2024-04-02 15:00:42.765 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/City/get-city-by-id/1 - -
+2024-04-02 15:00:42.766 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement)'
+2024-04-02 15:00:42.766 +05:30  INF  Route matched with {action = "GetCityById", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.City]]] GetCityById(Int32) on controller EmployeeManagement.Controllers.CityController (EmployeeManagement).
+2024-04-02 15:00:42.773 +05:30  INF  Executing action method EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 15:00:42.776 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CityName], [c].[StateId]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-04-02 15:00:42.777 +05:30  INF  Executed action method EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.2627ms.
+2024-04-02 15:00:42.777 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.City'.
+2024-04-02 15:00:42.777 +05:30  INF  Executed action EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement) in 10.9879ms
+2024-04-02 15:00:42.777 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CityController.GetCityById (EmployeeManagement)'
+2024-04-02 15:00:42.777 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/City/get-city-by-id/1 - - - 200 - application/json;+charset=utf-8 12.1848ms
+2024-04-02 15:00:42.797 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/States/get-state-by-id/17 - -
+2024-04-02 15:00:42.798 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement)'
+2024-04-02 15:00:42.798 +05:30  INF  Route matched with {action = "GetStateById", controller = "States"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.State]]] GetStateById(Int32) on controller EmployeeManagement.Controllers.StatesController (EmployeeManagement).
+2024-04-02 15:00:42.806 +05:30  INF  Executing action method EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 15:00:42.807 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[CountryId], [s].[StateName]
+FROM [States] AS [s]
+WHERE [s].[Id] = @__Id_0
+2024-04-02 15:00:42.807 +05:30  INF  Executed action method EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.6925ms.
+2024-04-02 15:00:42.808 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.State'.
+2024-04-02 15:00:42.808 +05:30  INF  Executed action EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement) in 9.4666ms
+2024-04-02 15:00:42.808 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.StatesController.GetStateById (EmployeeManagement)'
+2024-04-02 15:00:42.808 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/States/get-state-by-id/17 - - - 200 - application/json;+charset=utf-8 10.5877ms
+2024-04-02 15:00:42.827 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Country/get-country-by-id/7 - -
+2024-04-02 15:00:42.828 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement)'
+2024-04-02 15:00:42.828 +05:30  INF  Route matched with {action = "GetCountryById", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Country]]] GetCountryById(Int32) on controller EmployeeManagement.Controllers.CountryController (EmployeeManagement).
+2024-04-02 15:00:42.836 +05:30  INF  Executing action method EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 15:00:42.838 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CountryName]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-04-02 15:00:42.838 +05:30  INF  Executed action method EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.6992ms.
+2024-04-02 15:00:42.838 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployeeManagement.Entities.Country'.
+2024-04-02 15:00:42.838 +05:30  INF  Executed action EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement) in 10.0548ms
+2024-04-02 15:00:42.838 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CountryController.GetCountryById (EmployeeManagement)'
+2024-04-02 15:00:42.838 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Country/get-country-by-id/7 - - - 200 - application/json;+charset=utf-8 11.1269ms
+2024-04-02 15:00:42.930 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - -
+2024-04-02 15:00:42.931 +05:30  INF  CORS policy execution successful.
+2024-04-02 15:00:42.932 +05:30  INF  Executing endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 15:00:42.936 +05:30  INF  Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EmployeeManagement.Entities.Country]]] GetCountries() on controller EmployeeManagement.Controllers.CountryController (EmployeeManagement).
+2024-04-02 15:00:42.950 +05:30  INF  Executing action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) - Validation state: "Valid"
+2024-04-02 15:00:42.955 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryName]
+FROM [Countries] AS [c]
+2024-04-02 15:00:42.956 +05:30  INF  Executed action method EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.0994ms.
+2024-04-02 15:00:42.957 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeManagement.Entities.Country, EmployeeManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-02 15:00:42.957 +05:30  INF  Executed action EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement) in 20.9665ms
+2024-04-02 15:00:42.957 +05:30  INF  Executed endpoint 'EmployeeManagement.Controllers.CountryController.GetCountries (EmployeeManagement)'
+2024-04-02 15:00:42.957 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5055/api/Country/get-countries - - - 200 - application/json;+charset=utf-8 26.9231ms

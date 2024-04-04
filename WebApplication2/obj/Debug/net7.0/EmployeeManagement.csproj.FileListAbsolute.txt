@@ -268,3 +268,8 @@ C:\Users\TGCUser105\Desktop\EmployeeManagementWebAPI\WebApplication2\obj\Debug\n
 C:\Users\TGCUser105\Desktop\EmployeeManagementWebAPI\WebApplication2\obj\Debug\net7.0\EmployeeManagement.pdb
 C:\Users\TGCUser105\Desktop\EmployeeManagementWebAPI\WebApplication2\obj\Debug\net7.0\EmployeeManagement.genruntimeconfig.cache
 C:\Users\TGCUser105\Desktop\EmployeeManagementWebAPI\WebApplication2\obj\Debug\net7.0\ref\EmployeeManagement.dll
+C:\Users\TGCUser105\Desktop\EmployeeManagementWebAPI\WebApplication2\bin\Debug\net7.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\TGCUser105\Desktop\EmployeeManagementWebAPI\WebApplication2\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\TGCUser105\Desktop\EmployeeManagementWebAPI\WebApplication2\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\TGCUser105\Desktop\EmployeeManagementWebAPI\WebApplication2\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\TGCUser105\Desktop\EmployeeManagementWebAPI\WebApplication2\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
